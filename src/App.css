@@ -31,19 +31,43 @@
 }
 
 .row > li {
-  display: flex;
   flex: 25%;
+  display: flex;
+  border-right: 1px solid #d5d5d5;
+}
+
+.equalBtn > button {
+  background-color: #f5913e !important;
+  border-right: 0 !important;
+}
+
+.row > li > button {
+  display: flex;
+  flex: 100%;
   justify-content: center;
   padding: 12px;
   background-color: #e0e0e0;
   color: black;
-  border-right: 1px solid #d5d5d5;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.row > li:nth-child(4),
-.equalBtn {
+.equalBtn > button:active {
+  background-color: #804c22 !important;
+}
+
+.row > li > button:active {
+  background-color: #858484;
+}
+
+.row > li:nth-child(4) > button {
   background-color: #f5913e !important;
   border-right: 0 !important;
+}
+
+.row > li:nth-child(4) > button:active {
+  background-color: #804c22 !important;
 }
 
 .zero {
