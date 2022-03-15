@@ -1,61 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 import CalculatorButtons from './CalculatorButtons';
 import Result from './result';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
+function Calculator() {
+  const [calculations, setCalculations] = useState({
+    total: 0,
+    next: null,
+    operation: null,
+  });
 
-    this.state = {
-      calculation: {
-        total: 0,
-        next: null,
-        operation: null,
-      },
-    };
-  }
+  const [result, setResult] = useState('0');
 
-  changeResult = (buttonName) => {
-    this.setState((prevState) => {
-      if (buttonName === '=') {
-        if (prevState.calculation.next === null || prevState.calculation.total === null) {
-          return {};
-        }
-      }
-      const newCalculation = calculate(prevState.calculation, buttonName);
-      return { calculation: newCalculation };
-    });
-  }
-
-  render() {
-    const { calculation } = this.state;
-
+  const createResultString = (calculations) => {
     let result = '';
+    if (calculations.total) {
+      result += `${calculations.total}`;
 
-    if (calculation.total) {
-      result += `${calculation.total}`;
+      if (calculations.operation) {
+        result += ` ${calculations.operation}`;
 
-      if (calculation.operation) {
-        result += ` ${calculation.operation}`;
-
-        if (calculation.next) {
-          result += ` ${calculation.next}`;
+        if (calculations.next) {
+          result += ` ${calculations.next}`;
         }
       }
-    } else if (calculation.next) {
-      result += ` ${calculation.next}`;
+    } else if (calculations.next) {
+      result += ` ${calculations.next}`;
     } else {
       result = '0';
     }
+    return result;
+  };
 
-    return (
-      <div>
-        <Result result={result} className="result" />
-        <CalculatorButtons onClick={this.changeResult} />
-      </div>
-    );
-  }
+  const changeResult = async (buttonName) => {
+    setCalculations((prevCalculations) => {
+      if (buttonName === '=') {
+        if (!prevCalculations.next || !prevCalculations.total) {
+          return prevCalculations;
+        }
+      }
+      const newCalculation = calculate(calculations, buttonName);
+      setResult(createResultString(newCalculation));
+      return newCalculation;
+    });
+  };
+
+  return (
+    <div>
+      <Result result={result} className="result" />
+      <CalculatorButtons onClick={changeResult} />
+    </div>
+  );
 }
 
 export default Calculator;
