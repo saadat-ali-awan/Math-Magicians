@@ -1,4 +1,5 @@
 function ButtonsColumn(props) {
+  const { onClick } = props;
   return props.btns.map((btn) => {
     let listClass = '';
     if (btn === '0') {
@@ -8,7 +9,7 @@ function ButtonsColumn(props) {
     }
     return (
       <li key={btn} className={listClass}>
-        {btn}
+        <button onClick={() => { onClick(btn); }} type="button">{btn}</button>
       </li>
     );
   });
