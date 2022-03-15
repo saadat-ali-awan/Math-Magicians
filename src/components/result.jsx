@@ -8,7 +8,7 @@ class Result extends React.PureComponent {
   }
 }
 
-Result.defaultProps = { result: 0 };
+Result.defaultProps = { result: '0' };
 
 Result.propTypes = { result: PropTypes.string, className: PropTypes.string.isRequired };
 
