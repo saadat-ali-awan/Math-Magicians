@@ -1,7 +1,8 @@
-# Leaderboard
+# Math Magicians
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## Additional description about the project and its features:
+This is simple react based calculator project.
 
 ## Built With
 
@@ -12,6 +13,8 @@
 - Github and GithubFlow
 - Webpack
 
+## App Screenshot
+![App Image](./images/ss.png)
 ## Getting Started
 
 **To create a Calculator from this Repository feel free to contact me.**
