@@ -74,3 +74,7 @@
 .zero {
   flex: 50% !important;
 }
+
+.selected {
+  color: green;
+}
