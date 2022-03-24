@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<main
+  className="home mainStyle"
+>
+  <div
+    className="details"
+  >
+    <h2
+      className="heading"
+    >
+      Welcome To Our Page
+    </h2>
+    <div
+      className="description descripition-home"
+    >
+      <div>
+        <p
+          className="paragraph"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat debitis similique excepturi, a sapiente reiciendis illo eos ipsam dolorem natus unde architecto magnam, dolore nostrum id. Ipsa accusamus molestias soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat debitis similique excepturi, a sapiente reiciendis illo eos ipsam dolorem natus unde architecto magnam, dolore nostrum id. Ipsa accusamus molestias soluta!
+        </p>
+        <p
+          className="paragraph"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat debitis similique excepturi, a sapiente reiciendis illo eos ipsam dolorem natus unde architecto magnam, dolore nostrum id. Ipsa accusamus molestias soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat debitis similique excepturi, a sapiente reiciendis illo eos ipsam dolorem natus unde architecto magnam, dolore nostrum id. Ipsa accusamus molestias soluta!
+        </p>
+      </div>
+    </div>
+  </div>
+  <span />
+</main>
+`;
