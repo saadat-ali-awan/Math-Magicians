@@ -1,5 +1,11 @@
+import CommonLayout from './common-layout';
+
 const Quote = () => (
-  <div>Quote</div>
+  <CommonLayout
+    className="quote"
+  >
+    <span />
+  </CommonLayout>
 );
 
 export default Quote;
