@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Arbutus', cursive;
+  z-index: 10;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-filter: opacity(3%);
+  background-color: #fff;
+  filter: opacity(3%);
+  background-image: url('./images/bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.paragraph {
+  margin-top: 1.5rem;
+}
+
+blockquote {
+  margin-top: -5rem;
+}

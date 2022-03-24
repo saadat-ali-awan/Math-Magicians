@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<main
+  className="quote mainStyle"
+>
+  <div
+    className="details"
+  >
+    <h2
+      className="heading"
+    >
+      
+    </h2>
+    <div
+      className="description descripition-quote"
+    >
+      <blockquote
+        cite="http://www.worldwildlife.org/who/index.html"
+      >
+        <span
+          className="quotes"
+        >
+          “
+        </span>
+        It is better to solve one problem five different ways than to solve five problems one way.
+        <span
+          className="quotes"
+        >
+          ”
+        </span>
+      </blockquote>
+    </div>
+  </div>
+  <span />
+</main>
+`;
