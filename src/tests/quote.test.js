@@ -4,7 +4,7 @@ import Quote from '../pages/quote';
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<Quote ></Quote>)
+    .create(<Quote />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

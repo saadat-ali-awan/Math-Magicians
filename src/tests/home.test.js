@@ -4,7 +4,7 @@ import Home from '../pages/home';
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<Home ></Home>)
+    .create(<Home />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
