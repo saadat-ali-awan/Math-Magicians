@@ -3,7 +3,9 @@
 
 ## Additional description about the project and its features:
 This is simple react based calculator project.
-
+## Live Here At 
+[Heroku](https://magicians-math-calculator1.herokuapp.com/quote)
+[Netlify](https://623d05514fd103144245d8ad--keen-flan-ec8171.netlify.app/)
 ## Built With
 
 - React.js

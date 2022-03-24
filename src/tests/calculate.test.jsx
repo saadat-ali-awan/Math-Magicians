@@ -33,7 +33,7 @@ describe('Calculate Function Test', () => {
     expect(result).toEqual({ total: '24', next: null, operation: '-' });
   });
 
-  it('Third Number After Second Operation', () => {
+  it('Third Number After Second Operation.', () => {
     result = calculate(result, '4');
     expect(result).toEqual({ total: '24', next: '4', operation: '-' });
   });
