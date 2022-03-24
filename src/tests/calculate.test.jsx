@@ -38,7 +38,7 @@ describe('Calculate Function Test', () => {
     expect(result).toEqual({ total: '24', next: '4', operation: '-' });
   });
 
-  it('Equal Button Pressed', () => {
+  it('Equal Button Pressed.', () => {
     result = calculate(result, '=');
     expect(result).toEqual({ total: '20', next: null, operation: null });
   });
