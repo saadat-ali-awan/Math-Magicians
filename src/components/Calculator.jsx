@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 import CalculatorButtons from './CalculatorButtons';
 import Result from './result';
+import './calculator.css';
 
 function Calculator() {
   const [calculations, setCalculations] = useState({
@@ -46,7 +47,7 @@ function Calculator() {
   };
 
   return (
-    <div>
+    <div className="calculator-layout">
       <Result result={result} className="result" />
       <CalculatorButtons onClick={changeResult} />
     </div>

@@ -6,7 +6,7 @@ This is simple react based calculator project.
 
 ## Built With
 
-- React Js
+- React.js
 - HTML and CSS
 - JavaScript
 - [HTML & CSS3 & JavaScript Linters](https://github.com/microverseinc/linters-config/tree/master/html-css-js)

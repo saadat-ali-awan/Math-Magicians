@@ -1,0 +1,40 @@
+.mainStyle {
+  display: flex;
+  margin: 5%;
+  flex: 1;
+}
+
+.details {
+  color: red;
+  flex: 1;
+}
+
+.heading {
+  color: #4b5c77;
+  font-size: 2.5rem;
+}
+
+.description {
+  color: #4b5c77;
+  font-size: 1.2rem;
+}
+
+.descripition-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+}
+
+.descripition-calculator {
+  background-color: initial;
+}
+
+.descripition-home {
+  background-color: initial;
+}
+
+.quotes {
+  font-size: 4rem;
+}
