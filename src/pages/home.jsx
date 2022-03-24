@@ -1,5 +1,11 @@
+import CommonLayout from './common-layout';
+
 const Home = () => (
-  <div>Home</div>
+  <CommonLayout
+    className="home"
+  >
+    <span />
+  </CommonLayout>
 );
 
 export default Home;
